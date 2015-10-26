@@ -14,7 +14,7 @@
   },
   "scripts": {
     "tsc": "tsc -p src -w",
-    "start": "live-server --open=src"
+    "start": "node ./node_modules/live-server/live-server --open=src"
   },
   "keywords": [],
   "author": "Gregor Woiwode",
