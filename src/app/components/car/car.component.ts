@@ -1,5 +1,5 @@
 import { Component, View , Input, Output, EventEmitter } from 'angular2/angular2';
-import CarModel from '../models/car';
+import CarModel from '../../models/car';
 
 @Component({ selector: 'car' })
 @View({

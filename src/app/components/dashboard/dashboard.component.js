@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var angular2_1 = require('angular2/angular2');
 var car_component_1 = require('../car/car.component');
-var car_1 = require('../models/car');
+var car_1 = require('../../models/car');
 var DashboardComponent = (function () {
     function DashboardComponent() {
         this.totalDamages = 0;
