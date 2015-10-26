@@ -1,10 +1,10 @@
 import { Component, View, NgFor, NgIf } from 'angular2/angular2';
-import CarCmp from '../car/car.component';
+import CarComponent from '../car/car.component';
 import CarModel from '../../models/car';
 
 @Component({ selector: 'dashboard' })
 @View({
-  directives: [CarCmp, NgFor, NgIf],
+  directives: [CarComponent, NgFor, NgIf],
   template: `
     <div class="row">
       <template [ng-if]="totalDamages > 0">
