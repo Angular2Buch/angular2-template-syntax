@@ -44,7 +44,7 @@ import CarModel from '../models/car';
   </div>
   `
 })
-export default class CarCmp {
+export default class CarComponent {
   @Input() model: CarModel;
   @Output() damaged: EventEmitter = new EventEmitter();
 

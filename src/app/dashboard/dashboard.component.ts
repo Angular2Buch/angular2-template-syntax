@@ -1,5 +1,5 @@
 import { Component, View, NgFor, NgIf } from 'angular2/angular2';
-import CarCmp from '../car/carCmp';
+import CarCmp from '../car/car.component';
 import CarModel from '../models/car';
 
 @Component({ selector: 'dashboard' })
@@ -30,7 +30,7 @@ import CarModel from '../models/car';
     </div>
   `
 })
-export default class Dashboard {
+export default class DashboardComponent {
   cars: Array<CarModel>;
   totalDamages: number;
 
