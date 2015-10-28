@@ -1,6 +1,6 @@
 import { Component, View, NgFor, NgIf } from 'angular2/angular2';
-import CarCmp from '../car/car.component.ts';
-import CarModel from '../../models/car.ts';
+import CarCmp from '../car/car.component';
+import CarModel from '../../models/car';
 
 @Component({ selector: 'dashboard' })
 @View({

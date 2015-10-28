@@ -8,7 +8,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var angular2_1 = require('angular2/angular2');
-var car_ts_1 = require('../../models/car.ts');
+var car_1 = require('../../models/car');
 var CarComponent = (function () {
     function CarComponent() {
         this.damaged = new angular2_1.EventEmitter();
@@ -22,7 +22,7 @@ var CarComponent = (function () {
     };
     __decorate([
         angular2_1.Input(), 
-        __metadata('design:type', car_ts_1.default)
+        __metadata('design:type', car_1.default)
     ], CarComponent.prototype, "model", void 0);
     __decorate([
         angular2_1.Output(), 
