@@ -21,7 +21,7 @@ import CarModel from '../../models/car.ts';
       </div>
       <div class="col-md-3">
         <button
-          (click)="car.getTankCapicity()"
+          (click)="car.getTankCapacity()"
           [disabled]="c == null"
           class="btn btn-primary">
           Get tank capacity

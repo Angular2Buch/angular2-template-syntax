@@ -53,7 +53,7 @@ export default class CarComponent {
     this.damaged.next(this.model);
   }
 
-  getTankCapicity() {
+  getTankCapacity() {
     this.model.tankCapacity -= 5;
   }
 }
