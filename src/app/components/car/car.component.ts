@@ -54,6 +54,6 @@ export default class CarComponent {
   }
 
   getTankCapacity() {
-    this.model.tankCapacity -= 5;
+    this.model.tankCapacity = Math.floor(Math.random() * 100);
   }
 }
