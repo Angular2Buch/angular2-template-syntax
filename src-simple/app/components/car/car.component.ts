@@ -25,7 +25,8 @@ import { Component, View , Input, Output, EventEmitter } from 'angular2/angular2
       <tr>
         <td colspan="2">
           <button
-            (click)="rockfall">
+            class="btn btn-danger"
+            (click)="rockfall()">
             Report rockfall
           </button>
         </td>
