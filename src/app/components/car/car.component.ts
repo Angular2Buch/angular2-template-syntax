@@ -1,5 +1,5 @@
 import { Component, View , Input, Output, EventEmitter } from 'angular2/angular2';
-import CarModel from '../../models/car';
+import CarModel from '../../models/car.ts';
 
 @Component({ selector: 'car' })
 @View({
@@ -53,7 +53,7 @@ export default class CarComponent {
     this.damaged.next(this.model);
   }
 
-  getTankCapicity() {
+  getTankCapacity() {
     this.model.tankCapacity -= 5;
   }
 }
