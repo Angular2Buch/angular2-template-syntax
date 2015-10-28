@@ -1,7 +1,8 @@
-import { Component, View , Input, Output, EventEmitter } from 'angular2/angular2';
+import { Component, View , Input, Output, EventEmitter, FORM_DIRECTIVES } from 'angular2/angular2';
 
 @Component({ selector: 'car' })
 @View({
+  directives:[FORM_DIRECTIVES],
   template: `
   <div class="panel panel-default">
   <div class="panel-heading">ID {{ id | uppercase }}</div>
@@ -16,8 +17,7 @@ import { Component, View , Input, Output, EventEmitter } from 'angular2/angular2
         <td>Change ID</td>
         <td>
         <input
-          [value]="id"
-          (input)="id=$event.target.value"
+          [(ng-model)]="id"
           class="form-control"
           placeholder="Insert driver...">
         </td>

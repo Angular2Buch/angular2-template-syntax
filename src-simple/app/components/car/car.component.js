@@ -33,7 +33,8 @@ var CarComponent = (function () {
     CarComponent = __decorate([
         angular2_1.Component({ selector: 'car' }),
         angular2_1.View({
-            template: "\n  <div class=\"panel panel-default\">\n  <div class=\"panel-heading\">ID {{ id | uppercase }}</div>\n    <table class=\"table table-striped\">\n      <tr\n        [class.warning]=\"tankCapacity < 60\"\n        [class.danger]=\"tankCapacity < 20\">\n        <td>Tank Capacity</td>\n        <td>{{ tankCapacity }}</td>\n      </tr>\n      <tr>\n        <td>Change ID</td>\n        <td>\n        <input\n          [value]=\"id\"\n          (input)=\"id=$event.target.value\"\n          class=\"form-control\"\n          placeholder=\"Insert driver...\">\n        </td>\n      </tr>\n      <tr>\n        <td colspan=\"2\">\n          <button\n            class=\"btn btn-danger\"\n            (click)=\"rockfall()\">\n            Report rockfall\n          </button>\n        </td>\n      </tr>\n    </table>\n  </div>\n  "
+            directives: [angular2_1.FORM_DIRECTIVES],
+            template: "\n  <div class=\"panel panel-default\">\n  <div class=\"panel-heading\">ID {{ id | uppercase }}</div>\n    <table class=\"table table-striped\">\n      <tr\n        [class.warning]=\"tankCapacity < 60\"\n        [class.danger]=\"tankCapacity < 20\">\n        <td>Tank Capacity</td>\n        <td>{{ tankCapacity }}</td>\n      </tr>\n      <tr>\n        <td>Change ID</td>\n        <td>\n        <input\n          [(ng-model)]=\"id\"\n          class=\"form-control\"\n          placeholder=\"Insert driver...\">\n        </td>\n      </tr>\n      <tr>\n        <td colspan=\"2\">\n          <button\n            class=\"btn btn-danger\"\n            (click)=\"rockfall()\">\n            Report rockfall\n          </button>\n        </td>\n      </tr>\n    </table>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], CarComponent);
