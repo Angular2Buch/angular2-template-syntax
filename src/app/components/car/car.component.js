@@ -17,7 +17,7 @@ var CarComponent = (function () {
         this.model.hasDamage = true;
         this.damaged.next(this.model);
     };
-    CarComponent.prototype.getTankCapicity = function () {
+    CarComponent.prototype.getTankCapacity = function () {
         this.model.tankCapacity = Math.floor(Math.random() * 100);
     };
     __decorate([
