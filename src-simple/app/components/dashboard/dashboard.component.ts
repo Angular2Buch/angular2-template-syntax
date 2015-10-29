@@ -1,5 +1,5 @@
 import { Component, View, NgIf } from 'angular2/angular2';
-import CarComponent from '../car/car.component.ts';
+import CarComponent from '../car/car.component';
 
 @Component({ selector: 'dashboard' })
 @View({
