@@ -1,7 +1,7 @@
 # Angular 2 Template-Syntax -- Beispiele
 
-In diesem Verzeichnis finden sie das im Artikel gezeigte Beispiel unter `src-simple/`.
-Eine Weiterentwicklung dieser Demo steht für Sie im Ordner `src/` zur Verfügung
+In diesem Verzeichnis finden Sie das im Artikel gezeigte Beispiel unter `src-simple/`.
+Eine Weiterentwicklung dieser Demo steht für Sie im Ordner `src/` zur Verfügung.
 
 ## Setup & Start
 
