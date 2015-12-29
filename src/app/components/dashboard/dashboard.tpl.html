@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-9">
         <div class="row">
-            <template [ng-if]="totalDamages > 0">
+            <template [ngIf]="totalDamages > 0">
                 <div class="col-md-4">
                     <p class="lead">Reported Damages
                         <span class="badge">{{ totalDamages }}</span>
@@ -9,7 +9,7 @@
                 </div>
             </template>
         </div>
-        <div *ng-for="#c of cars" class="row">
+        <div *ngFor="#c of cars" class="row">
             <div class="col-md-8">
                 <car [model]="c" (damaged)="notifyCarDamaged($event)" var-car></car>
             </div>

@@ -1,5 +1,5 @@
-import { Component, View , Input, Output, EventEmitter } from 'angular2/angular2';
-import CarModel from '../../models/car';
+import { Component, View , Input, Output, EventEmitter } from 'angular2/core';
+import Car from '../../models/car';
 
 @Component({ selector: 'car' })
 @View({
@@ -45,8 +45,8 @@ import CarModel from '../../models/car';
   `
 })
 export default class CarComponent {
-  @Input() model: CarModel;
-  @Output() damaged: EventEmitter = new EventEmitter();
+  @Input() model: Car;
+  @Output() damaged: EventEmitter<Car> = new EventEmitter<Car>();
 
   rockfall() {
     this.model.hasDamage = true;

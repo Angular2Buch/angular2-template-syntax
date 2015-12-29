@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var angular2_1 = require('angular2/angular2');
+var core_1 = require('angular2/core');
 var car_component_1 = require('../car/car.component');
 var car_1 = require('../../models/car');
 var DashboardComponent = (function () {
@@ -25,9 +25,9 @@ var DashboardComponent = (function () {
         this.totalDamages++;
     };
     DashboardComponent = __decorate([
-        angular2_1.Component({ selector: 'dashboard' }),
-        angular2_1.View({
-            directives: [car_component_1.default, angular2_1.NgFor, angular2_1.NgIf],
+        core_1.Component({ selector: 'dashboard' }),
+        core_1.View({
+            directives: [car_component_1.default],
             templateUrl: 'app/components/dashboard/dashboard.tpl.html'
         }), 
         __metadata('design:paramtypes', [])

@@ -1,8 +1,7 @@
-import { Component, View , Input, Output, EventEmitter, FORM_DIRECTIVES } from 'angular2/angular2';
+import { Component, View , Input, Output, EventEmitter } from 'angular2/core';
 
 @Component({ selector: 'car' })
 @View({
-  directives:[FORM_DIRECTIVES],
   template: `
   <div class="panel panel-default">
   <div class="panel-heading">ID {{ id | uppercase }}</div>
@@ -17,7 +16,7 @@ import { Component, View , Input, Output, EventEmitter, FORM_DIRECTIVES } from '
         <td>Change ID</td>
         <td>
         <input
-          [(ng-model)]="id"
+          [(ngModel)]="id"
           class="form-control"
           placeholder="Insert driver...">
         </td>
@@ -38,7 +37,7 @@ import { Component, View , Input, Output, EventEmitter, FORM_DIRECTIVES } from '
 export default class CarComponent {
   @Input() id: string;
   @Input() tankCapacity: number;
-  @Output() damaged: EventEmitter = new EventEmitter();
+  @Output() damaged: EventEmitter<{}> = new EventEmitter();
 
   rockfall() {
     this.damaged.next(this.id);

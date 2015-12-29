@@ -1,12 +1,12 @@
-import { Component, View, NgIf } from 'angular2/angular2';
+import { Component, View } from 'angular2/core';
 import CarComponent from '../car/car.component';
 
 @Component({ selector: 'dashboard' })
 @View({
-  directives: [CarComponent, NgIf],
+  directives: [CarComponent],
   template: `
     <div class="row">
-      <template [ng-if]="totalDamages > 0">
+      <template [ngIf]="totalDamages > 0">
         <div class="col-md-4">
           <p class="lead">Reported Damages <span class="badge">{{ totalDamages }}</span></p>
         </div>
@@ -14,7 +14,7 @@ import CarComponent from '../car/car.component';
     </div>
     <div class="row">
       <div class="col-md-4">
-        <car [id]="id" [tank-capacity]="tankCapacity" (damaged)="notifyCarDamaged($event)" var-car></car>
+        <car [id]="id" [tankCapacity]="tankCapacity" (damaged)="notifyCarDamaged($event)" var-car></car>
       </div>
       <div class="col-md-3">
         <button

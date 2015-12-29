@@ -12,7 +12,7 @@
   },
   "scripts": {
     "tsc": "tsc -p src -w",
-    "start": "live-server"
+    "start": "node ./node_modules/live-server/live-server"
   },
   "keywords": [],
   "author": "Gregor Woiwode",
